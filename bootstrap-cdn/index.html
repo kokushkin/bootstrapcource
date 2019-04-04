@@ -7,22 +7,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world ! </title>
-     <style>
-         .myDiv{
-             width: 100%;
-             height: 200px;
-             background: url('img/header.jpg') no-repeat center center;
-             background-size: cover;
-         }
-         .myRow{
-             width: 100%;
-             height: 100px;
-         }
-     </style>
-      
+    <title>Bootstrap Media Breakpoints</title>     
+    
+    <style>
+        @media(min-width:576px){body{background: cyan;}}
+        @media(min-width:768px){body{background: lightblue;}}
+        @media(min-width:992px){body{background: lightgreen;}}
+        @media(min-width:1200px){body{background: yellow;}}
+        
+        @media(min-width:576px){body{background: gray;}}
+    </style>
   </head>
   <body>
+   
+    <h1 class="text-center display-3 my-2">Breakpoints in Bootstrap 4</h1>
     
     <div class="myDiv bg-primary"></div>    
     
