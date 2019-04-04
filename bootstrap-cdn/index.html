@@ -10,41 +10,49 @@
     <title>Hello, world ! </title>
      <style>
          .myDiv{
-             width: 200px;
+             width: 100%;
              height: 200px;
-             margin: 20px 10px;
-             padding: 20px;
-             color: white;
-             display: inline-block;
+             background: url('img/header.jpg') no-repeat center center;
+             background-size: cover;
          }
-         
-         #red{
-             background-color: purple;
+         .myRow{
+             width: 100%;
+             height: 100px;
          }
-         
-         #green{
-             background-color: orange;
-         }
-      </style>
+     </style>
       
   </head>
   <body>
     
-    <div class="myDiv" id="red">Hello Bootstrap</div>
-    <div class="myDiv" id="green">Hello Bootstrap</div>
-        <hr>
-        <div class="myDiv bg-primary">Hello Bootstrap</div>
-        <div class="myDiv bg-secondary">Hello Bootstrap</div>
-        <div class="myDiv bg-success">Hello Bootstrap</div>
-        <div class="myDiv bg-danger">Hello Bootstrap</div>
-        <div class="myDiv bg-warning">Hello Bootstrap</div>
-        <hr>
-        <div class="myDiv bg-info">Hello Bootstrap</div>
-        <div class="myDiv bg-light text-dark">Hello Bootstrap</div>
-        <div class="myDiv bg-dark">Hello Bootstrap</div>
-        <div class="myDiv bg-white text-dark">Hello Bootstrap</div>
-        <div class="myDiv bg-transparent text-dark">Hello Bootstrap</div>
-        
+    <div class="myDiv bg-primary"></div>    
+    
+    <hr>
+    
+    <div class="container">
+        <div class="myDiv bg-primary"></div>
+    </div>
+    
+    <hr>
+    
+    <div class="container-fluid">
+        <div class="myDiv bg-primary"></div>
+    </div>
+    
+    <hr>
+    
+    <div class="container">
+        <div class="row">
+            <div class="myRow col bg-success"></div>
+            <div class="myRow col bg-warning"></div>
+            <div class="myRow col bg-danger"></div>
+        </div>
+    </div>
+        <div class="container">
+        <div class="row">
+            <div class="myRow col bg-primary"></div>
+            <div class="myRow col bg-info"></div>        
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
