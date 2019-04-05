@@ -10,47 +10,31 @@
     <title>Bootstrap Media Breakpoints</title>     
     
     <style>
-        @media(min-width:576px){body{background: cyan;}}
-        @media(min-width:768px){body{background: lightblue;}}
-        @media(min-width:992px){body{background: lightgreen;}}
-        @media(min-width:1200px){body{background: yellow;}}
-        
-        @media(min-width:576px){body{background: gray;}}
+        div{
+            margin-top:20px;
+/*            border: 1px solid #000;*/
+        }
     </style>
   </head>
   <body>
    
-    <h1 class="text-center display-3 my-2">Breakpoints in Bootstrap 4</h1>
-    
-    <div class="myDiv bg-primary"></div>    
-    
-    <hr>
-    
-    <div class="container">
-        <div class="myDiv bg-primary"></div>
-    </div>
-    
-    <hr>
-    
-    <div class="container-fluid">
-        <div class="myDiv bg-primary"></div>
-    </div>
-    
-    <hr>
-    
-    <div class="container">
-        <div class="row">
-            <div class="myRow col bg-success"></div>
-            <div class="myRow col bg-warning"></div>
-            <div class="myRow col bg-danger"></div>
-        </div>
-    </div>
-        <div class="container">
-        <div class="row">
-            <div class="myRow col bg-primary"></div>
-            <div class="myRow col bg-info"></div>        
-        </div>
-    </div>
+    <section class="container">
+        <section class="row">
+            <div class="col-6 bg-info">1</div>
+            <div class="col-6 bg-secondary">2</div>
+        </section>
+        <section class="row">
+            <div class="col-4 bg-info">1</div>
+            <div class="col-4 bg-secondary">2</div>
+            <div class="col-4 bg-success">3</div>
+        </section>
+        <section class="row">
+            <div class="col-3 bg-info">1</div>
+            <div class="col-3 bg-secondary">2</div>
+            <div class="col-3 bg-success">3</div>
+            <div class="col-3 bg-danger">4</div>
+        </section>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
