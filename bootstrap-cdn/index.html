@@ -11,57 +11,64 @@
     <title>Bootstrap Forms</title>
   </head>
   <body>
-    <div class="container">
-        <h3 class="display-4 text-muted">Wonderland Contact Form</h3>
-        <div class="row">
-           <div class="col-sm-9">
-                <form>
-
-                    <div class="form-group">
-                        <label for="name">Character's Name</label>
-                        <input class="form-control" type="text" id="name" placeholder="Enter your character's name">
-                    </div>
+   
+    <div class="container">          
+       <h3 class="display-4 text-muted">A Famous Riddle</h3>
+    <div class="row">
+        <div class="col-sm-9">
+            
 
 
-                    <div class="form-group">
-                        <label for="email">Character's Email Address</label>
-                        <input  class="form-control" type="email" id="email" placeholder="Enter your character's email address">
-                        <small class="form-text text-muted">Your character's email will not be shared with anyone.</small>
-                    </div>
+       <form>
+            
+            <fieldset class="form-group">
+                
+            
+                <legend>Why is a raven like a writing-desk?</legend>
 
+                <div class="form-check">
+                   <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="answers" value="option1">
+                       I haven’t the slightest idea                
+                   </label>                
+                </div>
 
-                    <div class="form-group">
-                        <label for="password">Character's Password</label>
-                        <input  class="form-control" type="password" id="password" placeholder="Password" readonly>
-                    </div>
+                <div class="form-check">
+                   <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="answers" value="option2">
+                        I give it up                
+                   </label>                
+                </div>
 
-                    <div class="form-group">          
-                       <label for="species">Species</label>
-                       <select class="form-control" id="species">
-                          <option>Human</option>
-                          <option>Non-Human</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message for the Queen of Hearts</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="file">Upload a file</label>
-                        <input class="form-control-file btn btn-light" type="file" id="file">
-                        <small class="form-text text-muted" id="helpFile">Maximum size is three yottabytes.</small>
-                    </div>
-
-                    <button type="submit" class="btn btn-success">Submit</button>
-
-                </form>
+                <div class="form-check">
+                   <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="answers" value="option3" checked>
+                        Because it can produce a few notes, tho they are very flat               
+                   </label>                
+                </div>
+            
+            
+            </fieldset>
+            <div class="form-check">
+               <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                   I dislike the book <em>Alice&rsquo;s Adventures in Wonderland</em> very much.                
+               </label>                
             </div>
-           <div class="col-sm-3">
-               <img src="img/rabbit.jpeg" alt="rabbit" class="img-fluid">
-           </div>
-      </div><!-- end row -->
+
+
+            <button class="btn btn-info m-5" type="submit">Submit</button>
+        
+        </form>
+
+
+
+
+        </div>
+        <div class="col-sm-3">
+            <img src="img/hatter.jpg" alt="hatter" class="img-fluid">
+        </div>                                             
+    </div><!-- end row -->      
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
