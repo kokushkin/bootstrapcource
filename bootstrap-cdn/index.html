@@ -13,60 +13,22 @@
   <body>
    
     <div class="container">          
-       <h3 class="display-4 text-muted">A Famous Riddle</h3>
+       <h3 class="display-4 text-muted">Inline Forms with the Cheshire Cat</h3>
     <div class="row">
         <div class="col-sm-9">
-            
-
-
-       <form>
-            
-            <fieldset class="form-group">
-                
-            
-                <legend>Why is a raven like a writing-desk?</legend>
-
-                <div class="form-check">
-                   <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="answers" value="option1">
-                       I haven’t the slightest idea                
-                   </label>                
-                </div>
-
-                <div class="form-check">
-                   <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="answers" value="option2">
-                        I give it up                
-                   </label>                
-                </div>
-
-                <div class="form-check">
-                   <label class="form-check-label">
-                      <input type="radio" class="form-check-input" name="answers" value="option3" checked>
-                        Because it can produce a few notes, tho they are very flat               
-                   </label>                
-                </div>
-            
-            
-            </fieldset>
-            <div class="form-check">
-               <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                   I dislike the book <em>Alice&rsquo;s Adventures in Wonderland</em> very much.                
-               </label>                
-            </div>
-
-
-            <button class="btn btn-info m-5" type="submit">Submit</button>
-        
-        </form>
-
-
-
+            <form class="form-inline">
+                <input type="text" class="form-control mr-2" id="name" placeholder="Your cat's name?">
+                <input type="text" class="form-control mr-2" id="password" placeholder="Password">
+                <label class="form-check-label mr-2">
+                    <input type="checkbox" class="form-check-input">&ldquo;We&rsquo;re all mad here.&rdquo;                    
+                </label>
+                <button class="btn btn-warning" type="submit">Send</button>
+            </form>
+         
 
         </div>
         <div class="col-sm-3">
-            <img src="img/hatter.jpg" alt="hatter" class="img-fluid">
+            <img src="img/cat.png" alt="cat" class="img-fluid">
         </div>                                             
     </div><!-- end row -->      
     </div>
